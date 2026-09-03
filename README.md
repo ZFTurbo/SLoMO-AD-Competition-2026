@@ -41,10 +41,10 @@ All runs were performed on a single NVIDIA A6000 Blackwell 96GB GPU.
 
 Dataset consists of two parts ([CMD-AD](https://huggingface.co/datasets/Jyxarthur/CMD-AD) and [SF20K](https://huggingface.co/datasets/Jyxarthur/sf20kad-private-set/tree/main))
 
-| Split (no. movies) | 	Train	| Public test	| Private test                                                                                                      |
-| : ---- | : ----- | :------ |:------------------------------------------------------------------------------------------------------------------|
-| CMD-AD	| 1,332	| 98	| 44 ([Videos](https://huggingface.co/datasets/Jyxarthur/CMD-AD/resolve/main/video_private_test.zip?download=true)) | 
-| SF20K (zero-shot)	| –	| 17	| 26 ([Videos](https://huggingface.co/datasets/Jyxarthur/sf20kad-private-set/resolve/main/sf20kad_private_set_video.zip?download=true))                                                                                                   |
+| Split (no. movies) | 	Train	| Public test	| Private test                                                                                                                           |
+| :---- | :----- | :------ |:---------------------------------------------------------------------------------------------------------------------------------------|
+| CMD-AD	| 1,332	| 98	| 44 ([Videos](https://huggingface.co/datasets/Jyxarthur/CMD-AD/resolve/main/video_private_test.zip?download=true))                      | 
+| SF20K (zero-shot)	| –	| 17	| 26 ([Videos](https://huggingface.co/datasets/Jyxarthur/sf20kad-private-set/resolve/main/sf20kad_private_set_video.zip?download=true))  |
 
 Code is prepared to run on Private Test data.
 

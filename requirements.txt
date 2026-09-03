@@ -1,0 +1,11 @@
+numpy
+librosa
+soundfile
+nemo_toolkit[asr]
+decord
+openai
+vllm
+torch
+torchaudio
+torchvision
+imageio

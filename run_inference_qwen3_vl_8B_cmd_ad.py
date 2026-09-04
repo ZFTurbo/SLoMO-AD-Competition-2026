@@ -33,7 +33,7 @@ def proc_with_qwen():
     input_file = INPUT_PATH + '/CMD-AD/cmdad_ad_private_test.csv'
 
     client = OpenAI(
-        base_url="http://127.0.0.1:8001/v1",
+        base_url="http://127.0.0.1:8000/v1",
         api_key="EMPTY"
     )
     model_name = "qwen3-8b"

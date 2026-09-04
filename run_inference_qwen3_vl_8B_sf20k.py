@@ -34,7 +34,7 @@ def proc_with_qwen():
     input_file = INPUT_PATH + '/SF20K-AD/sf20kad_private_set.csv'
 
     client = OpenAI(
-        base_url="http://127.0.0.1:8001/v1",
+        base_url="http://127.0.0.1:8000/v1",
         api_key="EMPTY"
     )
     model_name = "qwen3-8b"
@@ -242,6 +242,11 @@ def proc_with_qwen():
             except Exception as e:
                 print(f"Error for question {ad_id} for video {video_id}: {e}")
                 output_text = ""
+
+            if "</think>" in output_text:
+                output_text = output_text.split("</think>")[-1].strip()
+            else:
+                output_text = output_text
 
             single_results[ad_id] = output_text
             print("A:", output_text)
